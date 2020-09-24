@@ -6,7 +6,7 @@ module.exports = function(eleventyConfig){
     // Copy assets and scripts
 
     eleventyConfig.addPassthroughCopy("src/_scripts");
-    eleventyConfig.addPassthroughCopy("src/_assets")
+    eleventyConfig.addPassthroughCopy("src/_assets");
 
     // Watch for SCSS changes
 
