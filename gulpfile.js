@@ -26,5 +26,15 @@ var watchScss = function(cd){
     cd();
 }
 
+var prodScss = function(cd){
+    return gulp.src('src/_styles/**/styles.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(postcss([ autoprefixer() ]))
+        .pipe(cleanCSS())
+        .pipe(gulp.dest('dist/_styles'));
+    cd();
+}
+
 exports.scss = scss;
 exports.default = watchScss;
+exports.prodscss = prodScss;
