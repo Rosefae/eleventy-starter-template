@@ -14,6 +14,8 @@ My 11ty starter template because I need one.
 
 `npm run oncescss`: Compiles SCSS files once.
 
+`npm run prodscss`: Compiles SCSS files once without sourcemap.
+
 `npm start`: Runs `serve` and `scss` concurrently.
 
 ## File structure
