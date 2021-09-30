@@ -9,6 +9,7 @@
     "serve": "npx eleventy --serve",
     "oncescss": "gulp scss",
     "scss": "gulp",
+    "prodscss": "gulp prodscss",
     "start": "concurrently -k -c green.dim,cyan.dim -s first \"npm:serve\" \"npm:scss\""
   },
   "repository": {
