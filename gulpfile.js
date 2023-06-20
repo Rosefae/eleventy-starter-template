@@ -2,13 +2,11 @@
 // For everything else, please see .eleventy.js
 
 const gulp = require('gulp');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const sourcemaps = require('gulp-sourcemaps');
 const postcss = require('gulp-postcss');
-
-sass.compiler = require('node-sass');
 
 var scss = function(cd){
     return gulp.src('src/_styles/**/styles.scss')
